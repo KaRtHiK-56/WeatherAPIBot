@@ -1,0 +1,46 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - ask_weather
+  - ask_location
+  - weather_location
+  - bot_challenge
+
+entities:
+- location
+
+slots:
+  location:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: attribute
+
+responses:
+
+  greet_back:
+  - text: "Hey there!!! Hope you are doing good."
+  utter_welcome:
+  - text: "Welcome, I am weather bot"
+
+  utter_ask_location:
+  - text: "May i know for which location?"
+
+
+  utter_goodbye:
+  - text: "we can catch up again"
+
+
+  utter_iamabot:
+  - text: "I am a bot, created by karthik."
+
+actions:
+- weatherapi
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

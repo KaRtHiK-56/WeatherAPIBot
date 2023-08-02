@@ -1,0 +1,86 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really  
+  
+- intent: ask_weather
+  examples: |
+    - tell me the weather
+    - what is the weather today?
+    - tell me the temperature
+    - what is the temperature today
+    - how is the weather today?
+    - how is the temperature today?
+
+- intent : ask_location
+  examples : |
+    - mumbai 
+    - delhi
+    - bangalore
+    - hyderbad
+    - trivanduram 
+    - chennai 
+
+- intent : weather_location
+  examples: |
+    - what is the weather today in [delhi](location)
+    - tell me the weather in [mumbai](location)
+    - what is the weather today in [bangalore](location)
+    - tell me the temperature in [chennai](location)
+    - what is the temperature today in [kolkata](location)
+    - how is the weather today in [hyderbad](location)
+    - how is the temperature today in [thiruvandrum](location)
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
