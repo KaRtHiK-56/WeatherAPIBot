@@ -22,7 +22,7 @@ slots:
 
 responses:
 
-  greet_back:
+  utter_greet_back:
   - text: "Hey there!!! Hope you are doing good."
   utter_welcome:
   - text: "Welcome, I am weather bot"
@@ -36,7 +36,7 @@ responses:
 
 
   utter_iamabot:
-  - text: "I am a bot, created by karthik."
+  - text: "I am a weather bot, created by karthik."
 
 actions:
 - weatherapi

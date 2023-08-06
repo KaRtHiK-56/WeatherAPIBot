@@ -23,7 +23,7 @@ class weatherapi(Action):
              tracker: Tracker,
              domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
          
-         api_key = 'd1dcf6f5f9e6f85f1aa51222e18cd4c6'
+         api_key = 'd1dcf6f5f9e6f85f1aa51222e18cd4c6s'
          loc = tracker.get_slot('location')
          current = requests.get('http://api.openweathermap.org/data/2.5/weather?q={}&appid={}'.format(loc, api_key)).json()
          print(current)

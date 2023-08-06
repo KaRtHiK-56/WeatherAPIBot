@@ -2,16 +2,17 @@ version: "3.1"
 
 stories:
 
-- story: greet
+- story: greeting
   steps:
   - intent: greet
-  - action: greet_back
-  - action: utter_welcome
+  - action: utter_greet_back
+
+
 
 - story: weather1
   steps:
   - intent: greet
-  - action: greet_back
+  - action: utter_greet_back
   - action: utter_welcome
   - intent: ask_weather
   - action: utter_ask_location
@@ -19,15 +20,17 @@ stories:
   - intent: goodbye
   - action: utter_goodbye
 
+
 - story: weather2
   steps:
   - intent: greet
-  - action: greet_back
+  - action: utter_greet_back
   - action: utter_welcome
   - intent: weather_location
   - action: weatherapi
   - intent: goodbye
   - action: utter_goodbye
+  
 
 
 - story: bot

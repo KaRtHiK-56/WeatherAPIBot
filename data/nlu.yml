@@ -60,12 +60,13 @@ nlu:
 
 - intent : ask_location
   examples : |
-    - mumbai 
-    - delhi
-    - bangalore
-    - hyderbad
-    - trivanduram 
-    - chennai 
+    - [mumbai](location)
+    - [delhi](location)
+    - [bangalore](location)
+    - [hyderbad](location)
+    - [trivanduram](location)
+    - [chennai](location)
+    
 
 - intent : weather_location
   examples: |
