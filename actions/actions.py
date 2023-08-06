@@ -28,13 +28,11 @@ class weatherapi(Action):
          current = requests.get('http://api.openweathermap.org/data/2.5/weather?q={}&appid={}'.format(loc, api_key)).json()
          print(current)
          country = current['sys']['country']
-         condition = current['weather'][0]['main']
          city = current['name']
+         condition = current['weather'][0]['main'    ]
          temperature_c = current['main']['temp']
          humidity = current['main']['humidity']
          wind_mph = current['wind']['speed']
-         response = """The current weather {} in {} at the moment. The temperature is {} degrees, the humidity is {}% and the wind speed is {} mph.""".format(condition, city, temperature_c, humidity, wind_mph)
-         
+         response = """It is currently {} in {} at the moment. The temperature is {} degrees, the humidity is {}% and the wind speed is {} mph.""".format(condition, city, temperature_c, humidity, wind_mph)
          dispatcher.utter_message(response)
-     
          return [SlotSet('location', loc)]

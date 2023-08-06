@@ -9,6 +9,7 @@ intents:
   - ask_location
   - weather_location
   - bot_challenge
+  - utter_thanks
 
 entities:
 - location
@@ -18,7 +19,7 @@ slots:
     type: text
     mappings:
     - type: from_entity
-      entity: attribute
+      entity: location
 
 responses:
 
@@ -29,6 +30,9 @@ responses:
 
   utter_ask_location:
   - text: "May i know for which location?"
+
+  utter_thanks:
+  - text: Welcome, will be always there to help!!!
 
 
   utter_goodbye:

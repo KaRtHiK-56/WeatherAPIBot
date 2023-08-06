@@ -77,6 +77,12 @@ nlu:
     - what is the temperature today in [kolkata](location)
     - how is the weather today in [hyderbad](location)
     - how is the temperature today in [thiruvandrum](location)
+  
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - OK
 
 - intent: bot_challenge
   examples: |
